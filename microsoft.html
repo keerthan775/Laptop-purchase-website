@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>Microsoft Surface Laptop 2 Intel core i5 8th Gen 13.5 inch 
+Touchscreen Laptop (8GB/128GB/Windows 10 Home/Integrated Graphics/Platinum/1.252kg)
+, 1769
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/microsoft1.jpg" style="width:60%" >
+  <img class="mySlides" src="images/microsoft2.jpg" style="width:60%" >
+  <img class="mySlides" src="images/microsoft3.jpg" style="width:60%" >
+  <img class="mySlides" src="images/microsoft4.jpg" style="width:60%" >
+  
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:33800</h1>
+<p>&#8226;Brand	Microsoft<br>
+&#8226;Model	1769<br>
+&#8226;Model Name	Surface Laptop 2<br>
+&#8226;Model Year	2019<br>
+&#8226;Item Weight	1.25 Kg<br>
+&#8226;Product Dimensions	30.8 x 22.3 x 1.5 cm<br>
+&#8226;Batteries:	1 Lithium ion batteries required. (included)<br>
+&#8226;Item model number	1769<br>
+&#8226;RAM Size	8 GB<br>
+&#8226;Flash Memory Installed Size	128.0<br>
+&#8226;Ram Memory Installed Size	8 GB<br>
+&#8226;Ram Memory Maximum Size	8 GB<br>
+&#8226;Ram Memory Technology	LPDDR3<br>
+&#8226;Hard Drive Size	128 GB<br>
+&#8226;Hard Disk Technology	Flash Memory Solid State<br>
+&#8226;Operating System	Windows 10 Home<br>
+&#8226;Processor Brand	Intel<br>
+&#8226;Processor Speed	1.60 GHz<br>
+&#8226;Processor Type	Core i5 8250U<br>
+&#8226;Processor Count	4<br>
+&#8226;Graphics Card Description	Integrated<br>
+&#8226;Graphics Coprocessor	Intel UHD Graphics 620<br>
+&#8226;Additional Features	touchscreen<br>
+&#8226;Included Components	Surface Laptop 2, Power Supply, 
+Quick Start Guide, Safety and Warranty Documents<br>
+&#8226;Software Included	Windows 10 Home; Microsoft Office 365 30-day trial<br>
+&#8226;Screen Size	13.5 Inches<br>
+&#8226;Display Type	PixelSense Display<br>
+&#8226;Display Resolution Maximum	2256 X 1504<br>
+&#8226;Battery Average Life	14.5 Hours<br>
+&#8226;Batteries Included	Yes<br>
+&#8226;Batteries Required	Yes<br>
+&#8226;Battery Cell Composition	Lithium Polymer<br>
+&#8226;Wireless Type	802.11ac<br>
+&#8226;Data Link Protocol	IEEE 802.11 ac compatible<br>
+&#8226;Total Usb Ports	1<br>
+&#8226;Keyboard Description	included<br>
+&#8226;Connector Type	Wireless<br>
+ 
+</p>
+<form action="microsoft.php" method="POST">
+<input type=submit value=order>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

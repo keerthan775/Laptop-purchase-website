@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>HP 14 Pentium Gold 14-inch Thin and Light Laptop (4GB/256GB SSD/Windows
+ 10 Home/MS Office/Jet Black/1.47 kg), 14q-cs0025TU
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/hpp1.jpg" style="width:60%" >
+  <img class="mySlides" src="images/hpp2.jpg" style="width:60%" >
+  <img class="mySlides" src="images/hpp3.jpg" style="width:60%" >
+  
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:24987</h1>
+<p>&#8226;Processor: Intel Pentium Gold 4417U (2.3 GHz base processor speed, 
+2 MB SmartCache, 2 cores)<br>
+&#8226;Operating System: Pre-loaded Windows 10 Home with lifetime validity<br>
+&#8226;Display: 14-inch HD (1366x768) display, brightness: 220 nits | WLED display<br>
+&#8226;Memory, Graphics & Storage: 4GB DDR4 RAM (1x4), Upgradable to 16GB | Intel HD Graphics 620 | Storage: 256GB M.2 SSD<br>
+&#8226;Preinstalled Software: Microsoft Office Home & Student 2019 | In the Box: Laptop with included battery and charger<br>
+&#8226;Design & battery: Thin and light design | Laptop weight: 1.47 kg | Average battery life = 7 hours, HP Fast Charge battery<br>
+&#8226;Ports: 2 USB 3.1 Type A, 1 USB 2.0 Type A, 1 HDMI v1.4, 1 RJ-45, 1 Audio-output | No CD/DVD drive<br>
+&#8226;Other features: Dual Speakers | HP Audio Boost | Bluetooth 4.2 | Wifi<br>
+&#8226;Warranty: This genuine HP laptop comes with a 1-year domestic warranty from HP covering manufacturing defects and not covering physical damage<br>
+ 
+</p>
+<form action="hpp.php" method="POST">
+<input type=submit value=order>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

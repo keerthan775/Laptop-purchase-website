@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>iBall Marvel 2 CompBook 14-inch Laptop Intel Celeron Processor N3350, 
+up to 2.4 GHz FHD IPS Screen 3 GB DDR3 RAM
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/iball1.jpg" style="width:60%" >
+  <img class="mySlides" src="images/iball2.jpg" style="width:60%" >
+  <img class="mySlides" src="images/iball3.jpg" style="width:60%" >
+  <img class="mySlides" src="images/iball4.jpg" style="width:60%" >
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:13990</h1>
+<p>&#8226;Brand	iBall<br>
+&#8226;Colour	Black<br>
+&#8226;Screen Size	14 Inches<br>
+&#8226;Maximum Display Resolution	1920x1080<br>
+&#8226;Item Weight	99.8 g<br>
+&#8226;Package Dimensions	15 x 12 x 8 cm<br>
+&#8226;Processor Brand	Intel<br>
+&#8226;Processor Type	Atom Z250<br>
+&#8226;Processor Speed	20 GHz<br>
+&#8226;Processor Count	2<br>
+&#8226;RAM Size	32 GB<br>
+&#8226;Computer Memory Type	PC800<br>
+&#8226;Hard Drive Size	32 GB<br>
+&#8226;Hard Disk Technology	Solid_state_drive<br>
+&#8226;Hard Drive Interface	ATA-4<br>
+&#8226;Hardware Platform	Windows<br>
+&#8226;Operating System	windows<br>
+ 
+</p>
+<form action="iball.php" method="POST">
+<input type=submit value=order>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

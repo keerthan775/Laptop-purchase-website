@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>Dell Vostro 3568--15.5" ---Core i3, 8 GB DDR4 || 1 TB, Windows 10 Home, TXPG9
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/dellv1.jpg" style="width:60%" >
+  <img class="mySlides" src="images/dellv2.jpg" style="width:60%" >
+  <img class="mySlides" src="images/dellv3.jpg" style="width:60%" >
+  <img class="mySlides" src="images/dellv4.jpg" style="width:60%" >
+  
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:33800</h1>
+<p>&#8226;Brand	Dell<br>
+&#8226;Item Height	24 Millimeters<br>
+&#8226;Item Width	26 Centimeters<br>
+&#8226;Screen Size	15.6 Inches<br>
+&#8226;Maximum Display Resolution	1366x768<br>
+&#8226;Item Weight	2.18 Kg<br>
+&#8226;Product Dimensions	38 x 26 x 2.4 cm<br>
+&#8226;Batteries:	1 Lithium ion batteries required. (included)<br>
+&#8226;Item model number	TXPG9<br>
+&#8226;Processor Brand	Intel<br>
+&#8226;Processor Type	Core i3<br>
+&#8226;Processor Speed	2 GHz<br>
+&#8226;Processor Count	2<br>
+&#8226;RAM Size	4 GB<br>
+&#8226;Computer Memory Type	DDR3 SDRAM<br>
+&#8226;Hard Drive Size	1024 GB<br>
+&#8226;Hard Disk Technology	mechanical hard drive<br>
+&#8226;Hard Drive Interface	Serial ATA<br>
+&#8226;Number of USB 2.0 Ports	1<br>
+&#8226;Wattage	2 Watts<br>
+&#8226;Hardware Platform	PC<br>
+&#8226;Operating System	Windows 10<br>
+&#8226;Lithium Battery Energy Content	40 Watt Hours<br>
+&#8226;Number of Lithium Ion Cells	4<br>
+ 
+</p>
+<form action="dellv.php" method="POST">
+<input type=submit value=order>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

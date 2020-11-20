@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>HP Envy 13-ah0043tx 2018 13.3-inch Laptop (8th Gen Intel Core 
+i5-8250U/8GB/256GB/Windows 10 Home/2GB Graphics), Natural Silver
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/hp1.jpg" style="width:60%" >
+  <img class="mySlides" src="images/hp2.jpg" style="width:60%" >
+  <img class="mySlides" src="images/hp3.jpg" style="width:60%" >
+  <img class="mySlides" src="images/hp4.jpg" style="width:60%" >
+  <img class="mySlides" src="images/hp5.jpg" style="width:60%" >
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:77990</h1>
+<p>&#8226;Brand	HP<br>
+&#8226;Series	Envy<br>
+&#8226;Colour	Natural Silver<br>
+&#8226;Item Height	15 Millimeters<br>
+&#8226;Item Width	21.2 Centimeters<br>
+&#8226;Screen Size	13.3 Inches<br>
+&#8226;Maximum Display Resolution	1920x1080<br>
+&#8226;Item Weight	1.21 Kg<br>
+&#8226;Product Dimensions	30.7 x 21.2 x 1.5 cm<br>
+&#8226;Batteries:	1 Lithium ion batteries required. (included)<br>
+&#8226;Item model number	13-ah0043tx<br>
+&#8226;Processor Brand	Intel<br>
+&#8226;Processor Type	Core i5<br>
+&#8226;Processor Speed	3.40 GHz<br>
+&#8226;Processor Count	4<br>
+&#8226;RAM Size	8<br>
+&#8226;Memory Technology	LPDDR3<br>
+&#8226;Computer Memory Type	GDDR5<br>
+&#8226;Maximum Memory Supported	8 GB<br>
+&#8226;Hard Drive Size	256 GB<br>
+&#8226;Hard Disk Technology	Flash Memory Solid State<br>
+&#8226;Hard Drive Interface	Solid State<br>
+&#8226;Audio Details	Headphones<br>
+&#8226;Speaker Description	Bang & Olufsen; quad speakers; HP Audio Boost 2.0<br>
+&#8226;Graphics Coprocessor	NVIDIA GeForce MX150 (2 GB GDDR5 dedicated)<br>
+&#8226;Graphics Card Description	dedicated<br>
+&#8226;Graphics Card Ram Size	2 GB<br>
+&#8226;Connectivity Type	Intel 802.11ac (2x2) Wi-Fi and Bluetooth 4.2 Combo<br>
+&#8226;Wireless Type	801.11ac<br>
+&#8226;Number of USB 3.0 Ports	2<br>
+&#8226;Number of Audio-out Ports	1<br>
+&#8226;Number of Microphone Ports	1<br>
+&#8226;Wattage	53.2 Watts<br>
+&#8226;Optical Drive Type	None<br>
+&#8226;Card Reader	MicroSD<br>
+&#8226;Hardware Platform	PC<br>
+&#8226;Operating System	Windows 10<br>
+&#8226;Supported Software	Preinstalled iQiyi<br>
+&#8226;Average Battery Life (in hours)	10 Hours<br>
+&#8226;Lithium Battery Energy Content	53.2 Watt Hours<br>
+&#8226;Lithium battery Weight	0.85 Grams<br>
+&#8226;Number of Lithium Ion Cells	4<br>
+&#8226;Included Components	Laptop, Battery, AC Adapter<br>
+ 
+</p>
+<form action="hp.php" method="POST">
+<input type=submit value=order>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

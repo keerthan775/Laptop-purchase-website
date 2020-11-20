@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>ASUS VivoBook X507UA Intel Core i5 8th Gen 15.6-inch FHD Thin and Light Laptop 
+(8GB RAM/1TB HDD/Windows 10/Integrated Graphics/Stary Grey/1.68 kg), X507UA-EJ852T
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/asus1.jpg" style="width:80%" >
+  <img class="mySlides" src="images/asus2.jpg" style="width:80%" >
+  <img class="mySlides" src="images/asus3.jpg" style="width:80%" >
+  <img class="mySlides" src="images/asus4.jpg" style="width:80%" >
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:20990</h1>
+<p>
+&#8226;Processor: Intel Core i5-8250U processor 1.6 GHz (6M Cache, up to 3.4 GHz, 4 Cores)<br>
+&#8226;Memory & Storage: 8GB DDR4 RAM, upgradable upto 16GB RAM| Storage: 1TB 5400RPM 2.5' HDD + 1x M.2 Expansion Slot<br>
+&#8226;Graphics: Intel UHD Graphics 620<br>
+&#8226;Display: 39.62cm(15.6) (16:9) LED-backlit FHD (1920x1080) 60Hz Anti-Glare Panel with 45% NTSC with ASUS Splendid | 75.4% screen-to-body ratio<br>
+&#8226;Operating System: Pre-loaded Windows 10 Home with lifetime validity<br>
+&#8226;Design & Battery: 8.1mm Thin bezel | Laptop weight 1.68 kg | Battery up to 8 hours*<br>
+&#8226;I/O Ports : 1 x COMBO audio jack |1 x Type-A USB 3.0 | 2 x USB 2.0 port | 1 x HDMI | 1 x MicroSD Card Reader | Comes without CD-Drive<br>
+&#8226;Other: Fast-Charging |Chiclet Keyboard | Fingerprint Sensor with Windows Hello | Wi-Fi 4(802.11bgn)| VGA Webcam<br>
+&#8226;Warranty: This genuine Asus laptop comes with 1 year Global Warranty and Onsite Domestic Warranty. For more details, see warranty section<br>
+&#8226;For product related queries contact the brand at contact_us on: [ 7204864098 ]
+</p>
+<form action="asus.php" method="POST">
+<input type=submit value=order>
+
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

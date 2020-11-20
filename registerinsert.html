@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+body{
+background-image:i;
+}
+input[type=text], input[type=password],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+background-image:url("images/img3.jpeg");
+background-repeat: repeat;
+}
+.bg-img {
+    /* The image used */
+    
+
+   
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+    position: center;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color:	#FFF0F5;
+}
+</style>
+</head>
+<body >
+<div id="bg-img">
+<form method="POST" action="registerinsert.php" class="container">
+<fieldset>
+<legend> <b>Register</b></legend>
+<p><label>Name:</label><input type="text" name="name" required autofocus></p><br/>
+<p><label>Mail:</label><input type="email" name="mail" required ></p><br/>
+<p><label>Phone:</label><input type="text" name="phone"  pattern="[789][0-9]{9}"></p><br/>
+<p><label>Address:</label><input type="text" name="addr" required></p><br/>
+<p><label>City:</label><input type="text" name="city" required></p><br/>
+<p><label>State:</label><input type="text" name="state" required></p><br/>
+<p><label>Password:</label><input type="password" name="password" required minlength=5></p><br/>
+<input type="submit" name="submit" value="submit">
+</form>
+</div>
+
+</body>
+</html>
+
+

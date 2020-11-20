@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>Apple MacBook Air (13-inch Retina Display, 1.6GHz Dual-core Intel Core i5, 
+256GB) - Gold
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/mac1.jpg" style="width:60%" >
+  <img class="mySlides" src="images/mac2.jpg" style="width:60%" >
+  <img class="mySlides" src="images/mac3.jpg" style="width:60%" >
+  <img class="mySlides" src="images/mac4.jpg" style="width:60%" >
+  <img class="mySlides" src="images/mac5.jpg" style="width:60%" >
+  <img class="mySlides" src="images/mac6.jpg" style="width:60%" >
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:127990</h1>
+<p>&#8226;Stunning 13.3-inch Retina display<br>
+&#8226;Touch ID<br>
+&#8226;Dual-core 8th-generation Intel Core i5 processor with Intel UHD Graphics 617<br>
+&#8226;Fast SSD storage<br>
+&#8226;8GB memory<br>
+&#8226;Stereo speakers with wider stereo sound<br>
+&#8226;Two Thunderbolt 3 (USB-C) ports<br>
+&#8226;Up to 12 hours of battery life<br>
+&#8226;Up to 12 hours of battery life<br>
+&#8226;Force Touch trackpad<br>
+ 
+</p>
+<form action="mac.php" method="POST">
+<input type=submit value=order>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

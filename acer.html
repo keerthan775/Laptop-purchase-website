@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+	background-color:#F0F8FF;
+}
+.mySlides {display:none;}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+</style>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+<h1>Acer Aspire 3 A315-53 15.6-inch Laptop (Intel Celeron Processor 
+3867U/4GB/500GB HDD/Windows 10 Home 64 bit/Intel HD 610 Graphics), Obsidian Black
+</h1>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/acer1.jpg" style="width:60%" >
+  <img class="mySlides" src="images/acer2.jpg" style="width:60%" >
+  <img class="mySlides" src="images/acer3.jpg" style="width:60%" >
+  <img class="mySlides" src="images/acer4.jpg" style="width:60%" >
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<h1>cost:17990</h1>
+<p>&#8226;Brand	Acer<br>
+&#8226;Series	Aspire<br>
+&#8226;Colour	Obsidian Black<br>
+&#8226;Item Height	21 Millimeters<br>
+&#8226;Item Width	38.2 Centimeters<br>
+&#8226;Screen Size	15.6 Inches<br>
+&#8226;Maximum Display Resolution	1366x768<br>
+&#8226;Item Weight	2.1 Kg<br>
+&#8226;Product Dimensions	26.3 x 38.2 x 2.1 cm<br>
+&#8226;Batteries:	1 Lithium ion batteries required. (included)<br>
+&#8226;Item model number	A315-53<br>
+&#8226;Processor Brand	Intel<br>
+&#8226;Processor Type	Celeron<br>
+&#8226;Processor Speed	1.80 GHz<br>
+&#8226;Processor Count	2<br>
+&#8226;RAM Size	4 GB<br>
+&#8226;Memory Technology	DDR4<br>
+&#8226;Computer Memory Type	DDR4 SDRAM<br>
+&#8226;Maximum Memory Supported	12 GB<br>
+&#8226;Hard Drive Size	500 GB<br>
+&#8226;Hard Disk Technology	Mechanical Hard Drive<br>
+&#8226;Hard Drive Interface	Serial ATA<br>
+&#8226;Speaker Description	Two in-built stereo speakers<br>
+&#8226;Graphics Coprocessor	Intel HD Graphics 610<br>
+&#8226;Connectivity Type	Wi-Fi, Bluetooth-V4, Infrared<br>
+&#8226;Wireless Type	802.11a/b/g/n/ac<br>
+&#8226;Number of USB 2.0 Ports	2<br>
+&#8226;Number of USB 3.0 Ports	1<br>
+&#8226;Number of HDMI Ports	1<br>
+&#8226;Number of Audio-out Ports	1<br>
+&#8226;Number of Ethernet Ports	1<br>
+&#8226;Voltage	220<br>
+&#8226;Hardware Platform	Windows<br>
+&#8226;Operating System	Windows 10 Home<br>
+&#8226;Supported Software	Acer TrueHarmony<br>
+&#8226;Average Battery Life (in hours)	6.5 Hours<br>
+&#8226;Lithium Battery Energy Content	37 Watt Hours<br>
+&#8226;Number of Lithium Ion Cells	2<br>
+&#8226;Included Components	Laptop, Battery, AC Adapter, User Guide, Manuals<br>
+ 
+</p>
+<form action="acer.php" method="POST">
+<input type=submit value=order>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+</body>
+</html>

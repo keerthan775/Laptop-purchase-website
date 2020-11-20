@@ -1,0 +1,88 @@
+<html>
+<head>
+ <link rel="stylesheet" 
+          href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+background-color:	#808080;
+}
+input[type=text], input[type=password],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.bg-img {
+    /* The image used */
+    
+
+   
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+    position: center;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color:	#FFF0F5;
+}
+div{
+background-image:url("images/k8.jpg");
+background-repeat: no-repeat;
+}
+</style>
+<script>
+    function reg() {
+        window.location=    "http://localhost/7sem/registerinsert.html";
+    }
+  </script>
+</head>
+<body>
+<div id="bg-img">
+
+<form method="POST" action="login.php" class="container">
+<fieldset>
+<legend> <b>LOGIN</b></legend>
+<p><label>username:</label><input type="text" name="user" required autofocus></p><br/>
+<p><label>password:</label><input type="password" name="pass" required></p><br/>
+<input type="submit" name="submit" value="submit">
+
+</form>
+
+</div>
+<input type="submit" value="create a new account" onclick=reg() />
+</body>
+</html>
